@@ -35,19 +35,19 @@
         <div
           class="bg-[#41ff6b1a] lg:w-[123px] lg:h-[52px] w-20 h-10 flex lg:p-3 rounded-[50px] justify-center items-center gap-2"
         >
-          <h3 class="text-2xl font-bold">0</h3>
+          <h3 class="text-2xl font-bold"><span id="heartCount">0</span></h3>
           <img class="w-[30px] h-[30px]" src="assets/heart.png" alt="" />
         </div>
         <div
           class="bg-[#41ff6b1a] lg:w-[106px] w-20 rounded-[50px] h-10 lg:h-[52px] lg:px-[20px] lgpy-[12px] flex items-center gap-2"
         >
-          <h3 class="text-2xl font-bold">100</h3>
+          <h3 class="text-2xl font-bold"><span id="coinCount">100</span></h3>
           <img class="w-6 h-6" src="assets/coin.png" alt="" />
         </div>
         <div
           class="bg-[#00a63e] rounded-[50px] lg:w-[127px] w-20 h-10 lg:h-[52px] flex items-center justify-center text-white"
         >
-          <h3 class="text-[16px] font-semibold">2 Copy</h3>
+          <h3 class="text-[16px] font-semibold"><span id="copyCount">0 Copy</span></h3>
         </div>
       </div>
     </section>
@@ -141,13 +141,13 @@
           >
           <div class="flex gap-3 mt-4">
             <button
-              onclick="copyNumber('102')"
+              onclick="copyNumber('999')"
               class="flex-1 cursor-pointer bg-gray-200 rounded py-2"
             >
               <i class="fa-slab fa-regular fa-copy"></i> Copy
             </button>
             <button
-              onclick="makeCall('ফায়ার সার্ভিস','102')"
+              onclick="makeCall('পুলিশ','999')"
               class="flex-1 cursor-pointer bg-green-500 text-white rounded py-2"
             >
               <i class="fa-solid fa-phone"></i> Call
@@ -182,13 +182,13 @@
           >
           <div class="flex gap-3 mt-4">
             <button
-              onclick="copyNumber('100')"
+              onclick="copyNumber('999')"
               class="flex-1 bg-gray-200 rounded py-2"
             >
               <i class="fa-slab fa-regular fa-copy"></i> Copy
             </button>
             <button
-              onclick="makeCall('পুলিশ','100')"
+              onclick="makeCall('ফায়ার সার্ভিস','999')"
               class="flex-1 bg-green-500 text-white rounded py-2"
             >
               <i class="fa-solid fa-phone"></i> Call
@@ -270,7 +270,7 @@
               <i class="fa-slab fa-regular fa-copy"></i> Copy
             </button>
             <button
-              onclick="makeCall('নারী সহায়তা','109')"
+              onclick="makeCall('নারী ও শিশু সহায়তা','109')"
               class="flex-1 bg-green-500 text-white rounded py-2"
             >
               <i class="fa-solid fa-phone"></i> Call
@@ -312,7 +312,7 @@
               <i class="fa-slab fa-regular fa-copy"></i> Copy
             </button>
             <button
-              onclick="makeCall('শিশু সহায়তা','109')"
+              onclick="makeCall('দুদক','109')"
               class="flex-1 bg-green-500 text-white rounded py-2"
             >
               <i class="fa-solid fa-phone"></i> Call
@@ -354,7 +354,7 @@
               <i class="fa-slab fa-regular fa-copy"></i> Copy
             </button>
             <button
-              onclick="makeCall('দুর্যোগ ব্যবস্থাপনা','16216')"
+              onclick="makeCall('বিদ্যুৎ বিভ্রাট','16216')"
               class="flex-1 bg-green-500 text-white rounded py-2"
             >
               <i class="fa-solid fa-phone"></i> Call
@@ -392,7 +392,7 @@
               <i class="fa-slab fa-regular fa-copy"></i> Copy
             </button>
             <button
-              onclick="makeCall('দুর্নীতি দমন','16445')"
+              onclick="makeCall('ব্র্যাক','16445')"
               class="flex-1 bg-green-500 text-white rounded py-2"
             >
               <i class="fa-solid fa-phone"></i> Call
@@ -434,7 +434,7 @@
               <i class="fa-slab fa-regular fa-copy"></i> Copy
             </button>
             <button
-              onclick="makeCall('রেলওয়ে','163')"
+              onclick="makeCall('বাংলাদেশ রেলওয়ে','163')"
               class="flex-1 bg-green-500 text-white rounded py-2"
             >
               <i class="fa-solid fa-phone"></i> Call
@@ -452,6 +452,8 @@
         <ul id="historyList" class="space-y-2 text-sm text-gray-700"></ul>
       </aside>
     </main>
+
+
 
     <script src="js/script.js"></script>
   </body>
